@@ -1,6 +1,6 @@
 {
   "name": "mui-confirm-modal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple util that easily allows us to display confirmation modals for certain actions. Based on react-confirm and material-ui",
   "author": "Naveed-Naqi",
   "license": "MIT",
