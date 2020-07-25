@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { confirm } from './index'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(confirm).toBeTruthy()
   })
 })
