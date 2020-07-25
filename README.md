@@ -10,14 +10,11 @@
 npm install --save mui-confirm-modal
 ```
 
+## Demo
+
 # Confirm
 
 This utility allows the dev to easily implement confirmation modals for any action. This works well with nesting modals as well.
-
-# Requirements
-
-- @material-ui/core
-- react-confirm
 
 ## title (String) [Optional]
 
