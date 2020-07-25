@@ -10,18 +10,50 @@
 npm install --save mui-confirm-modal
 ```
 
-## Usage
+# Confirm
 
-```jsx
-import React, { Component } from 'react'
+This utility allows the dev to easily implement confirmation modals for any action. This works well with nesting modals as well.
 
-import MyComponent from 'mui-confirm-modal'
-import 'mui-confirm-modal/dist/index.css'
+# Requirements
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
+- @material-ui/core
+- react-confirm
+
+## title (String) [Optional]
+
+The title of the modal. The title is 'Confirmation' by default.
+
+## message (string) [Required]
+
+The message displayed in the modal
+
+# Example
+
+```js
+import React from 'react'
+import Button from '@material-ui/core/Button'
+import { confirm } from './confirm'
+
+export default function ConfirmModalTemplateExample() {
+  const handleOnClick = async () => {
+    if (
+      await confirm({
+        message: 'Do you really want to be batman?'
+      })
+    ) {
+      console.log('yes')
+    } else {
+      console.log('no')
+    }
   }
+
+  return (
+    <div>
+      <Button variant='outlined' color='primary' onClick={handleOnClick}>
+        Open alert dialog
+      </Button>
+    </div>
+  )
 }
 ```
 

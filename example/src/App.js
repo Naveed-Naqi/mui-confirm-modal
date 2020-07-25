@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'mui-confirm-modal'
 import 'mui-confirm-modal/dist/index.css'
+import ConfirmModalExample from './ConfirmModalExample'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ConfirmModalExample></ConfirmModalExample>
 }
 
 export default App
